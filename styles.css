@@ -6,7 +6,7 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #bc9898;
-    background-image: url('background.jpg'); /* Arkaplan resmini belirtir */
+    background-image: url('backgroundGif.gif'); /* Arkaplan resmini belirtir */
     background-size: cover; /* Arkaplan resmini tüm alanı kaplayacak şekilde ayarlar */
     background-position: center; /* Arkaplan resmini ortalar */
     background-repeat: no-repeat; /* Arkaplan resmini tekrar etmez */
@@ -93,6 +93,25 @@ img {
     top: 300px;
 }
 
+#clock {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: absolute; /* Kesin konumlandırma */
+    top: 20px; /* Yukarıdan 20 piksel boşluk */
+    right: 20px; /* Sağdan 20 piksel boşluk */
+    color:wheat;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label, input {
+    margin: 5px 0
+}
 /*Bu kısımda Github copilot, windows copilot ve deepseek ai yı kullandım. Bir modelden promt la aldığım çıktıyı farklı 
 modellerde kullandım ve modifiye ettim. Aynı zamanda youtube, stackoverflow gibi sitelerden de yardım aldım. */
 /*Sayfadaki giriş yapılan kısmı sayfanın tam merkezine sabitle. Sayfanın boyu küçülse bile hep ortada kalmaya devam etsin.*/
