@@ -70,8 +70,8 @@ body {
     position: fixed; /* Sayfanın sabit bir konumunda kalır */
     bottom: 20px; /* En alt */
     right: 20px; /* Sağ köşe */
-    width: 60px; /* Genişlik yarıya indirildi */
-    height: 75px; /* Yükseklik yarıya indirildi */
+    width: 60px;
+    height: 75px;
     transform: scale(0.5); /* Boyutu yarıya indir */
     transform-origin: bottom right; /* Küçültme işleminin merkezi */
     top: 65%;
@@ -79,9 +79,9 @@ body {
 }
 
 .sap {
-    width: 10px; /* Genişlik yarıya indirildi */
-    height: 40px; /* Yükseklik yarıya indirildi */
-    background-color: #f5f5dc; /* Krem rengi */
+    width: 10px;
+    height: 40px;
+    background-color: #f5f5dc;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -90,11 +90,11 @@ body {
 }
 
 .kafa {
-    width: 60px; /* Genişlik yarıya indirildi */
-    height: 20px; /* Yükseklik yarıya indirildi */
-    background-color: #ff0000; /* Kırmızı renk */
+    width: 60px;
+    height: 20px;
+    background-color: #ff0000;
     position: absolute;
-    bottom: 40px; /* Sapın üstüne yerleştir */
+    bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 25% 25% 0 0; /* Ters U şekli için alt kısım düzleştirildi */
@@ -119,7 +119,7 @@ body {
     transform: translateX(-50%);
     color: #FFFFFF;
     font-family: Arial, sans-serif;
-    font-size: 24px; /* Yazı boyutu küçültüldü */
+    font-size: 24px;
     white-space: nowrap;
 }
 

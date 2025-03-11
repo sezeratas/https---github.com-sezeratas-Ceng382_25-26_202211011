@@ -1,17 +1,15 @@
-// Array to store login credentials
 const loginCredentials = [];
 
-// Function to store credentials
-function storeCredentials() {
-    // Get username and password values
+function storeCredentials(event) {
+    event.preventDefault(); // Formun varsayılan submit davranışını engeller
+
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    // Store the credentials in an array
     loginCredentials.push({ username, password });
 
-    // Print all elements of the array to the console
     console.log(loginCredentials);
+
 }
 
 // Function to update the clock
@@ -24,15 +22,13 @@ function updateClock() {
 // Update the clock every second
 setInterval(updateClock, 1000);
 
-document.addEventListener('keydown', (event) => {
-    if (event.key === 'h' || event.key === 'H') {
-        const forms = document.querySelectorAll('form');
-    forms.forEach(form => {
-        if (form.style.display === 'none') {
-            form.style.display = 'block';
+document.addEventListener('keydown', function(event) {
+    if(event.key === 'h' || event.key === 'H') {
+        var loginContainer = document.querySelector('.login-container');
+        if (loginContainer.style.display === 'none') {
+            loginContainer.style.display = 'flex';
         } else {
-            form.style.display = 'none';
+            loginContainer.style.display = 'none';
         }
-    });
     }
 });
